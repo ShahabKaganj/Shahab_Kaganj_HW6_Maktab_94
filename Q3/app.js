@@ -14,3 +14,10 @@ const data = (num, userInfo) => {
 // -- sort info --
 const unique = (arr) => new Set(arr);
 
+// -- run the program --
+const dataUser = data(num, userInfo);
+const sortedData = unique(dataUser);
+
+console.log(dataUser);
+console.log(...sortedData);
+
