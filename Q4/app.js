@@ -11,4 +11,19 @@ const data = (num, userInfo) => {
     }
     return userInfo;
 };
+
+//-- anagrams function --
+const anagramsFunc = (arr) => {
+    const anagrams = {};
+  
+    arr.map((word) => {
+      const sortedWord = [...word]
+        .map((c) => c.toLowerCase())
+        .sort()
+        .join("");
+  
+      anagrams[sortedWord] = word;
+    });
+    return anagrams;
+};
   
