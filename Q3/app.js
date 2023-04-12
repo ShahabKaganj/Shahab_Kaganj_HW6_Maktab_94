@@ -10,3 +10,7 @@ const data = (num, userInfo) => {
     }
     return userInfo;
 };
+
+// -- sort info --
+const unique = (arr) => new Set(arr);
+
