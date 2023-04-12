@@ -39,7 +39,7 @@ function getData(row, col) {
 const data = getData(rows, columns);
 console.log(data);
 
-const result = sortFunc(data);
+const result = sortFunc(...data);
 
 console.log(result.toString());
 console.log(...result);
