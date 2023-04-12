@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,100 @@
     <title>Q6</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     
+    <div class="container">
+        <header>
+            <h1>Student Registeration Form</h1>
+            <br>
+            <hr>
+        </header>
+        <br>
+
+        <form action="#" class="form">
+
+            <div>
+                <label>Firstname :</label>
+                <input id="firstname" type="text" placeholder="Firstname"  minlength="3" maxlength="10">
+            </div>
+
+            <div>
+                <label>Middlename :</label>
+                <input id="middlename" type="text" placeholder="Middlename" minlength="3" maxlength="10">
+            </div>
+
+            <div>
+                <label>Lastname :</label>
+                <input type="text" id="lastname" placeholder="Lastname" minlength="3" maxlength="10">
+            </div>
+
+            <div class="course-box">
+                <label id="course">Course :</label>
+                <select>
+                    <option value="course" selected>Course</option>
+                    <option value="python">JavaScript</option>
+                    <option value="java">React</option>
+                    <option value="react">Vue</option>
+                    <option value="react">Angular</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Gender :</label>
+                <div class="radio-box">
+                    <div class="radio">
+                        <input name="radio" type="radio" value="Male">
+                        <label>Male</label>
+                    </div>
+                    <div class="radio">
+                        <input name="radio" type="radio" value="Female">
+                        <label>Female</label>
+                    </div>
+                    <div class="radio">
+                        <input name="radio" type="radio" value="other">
+                        <label>Other</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <label>Phone :</label>
+                <input type="text" value="+91" minlength="2" maxlength="5" pattern="(?=.*[0-9])(?=.*[+])>
+            </div>
+
+            <div>
+                <input type="number" placeholder="Phone no." minlength="10" maxlength="10">
+            </div>
+
+            <div>
+                <label>Current Address :</label>
+                <textarea placeholder="Current Address" cols="100" rows="3"></textarea>
+            </div>
+
+            <div>
+                <label><b>Email :</b></label>
+                <input type="email" placeholder="Enter Email">
+            </div>
+
+            <div>
+                <label><b>Password :</b></label>
+                <input type="password"placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+            </div>
+
+            <div>
+                <label><b>Re-type Password :</b></label>
+                <input type="password" id="password" placeholder="Retype Password">
+            </div>
+
+
+            <input class="submit" type="submit" value="Register"></input>
+
+        </form>
+        
+    </div>
+
 </body>
+
 </html>
