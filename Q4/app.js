@@ -26,4 +26,10 @@ const anagramsFunc = (arr) => {
     });
     return anagrams;
 };
-  
+
+//-- run program --
+const dataUser = data(num, userInfo);
+const newAnagrams = anagramsFunc(dataUser);
+
+alert(Object.values(newAnagrams));
+
