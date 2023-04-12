@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 100px;
+    overflow: auto;
+}
+
+.container {
+    background-color: #add8e6;
+    width: 60%;
+    padding: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color: #fff;
+    border: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    height: 50px;
+    padding-inline: 20px;
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    margin: 10px 2px;
+}
+
+.course_box {
+    display: flex;
+    gap: 20px;
+}
+
+#course {
+    display: inline;
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+}
+
+.radio-box {
+    display: flex;
+    gap: 5px;
+    height: 20px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    gap: 5px;
+}
+
+.submit {
+    background-color: #007f0d;
+    border: 0;
+    outline: 0;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+select {
+    border: 0;
+    outline: 0;
+    padding: 3px 10px;
+    margin: 10px;
+}
