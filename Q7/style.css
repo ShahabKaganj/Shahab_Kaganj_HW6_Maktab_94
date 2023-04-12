@@ -1,0 +1,264 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y:auto;
+  overflow-x: hidden;
+  font-family: 'yekan bakh', sans-serif;
+  color: rgb(23, 59, 112);
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.container{
+  width: 100%;
+  padding:20px 60px;
+  position: relative;
+ 
+}
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.video{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.filter-box {
+  margin: 30px auto;
+  width: 95%;
+  display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 15px;
+}
+
+.filter{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ 
+}
+
+i {
+    font-size: 0.8rem;
+    transform: translate(-10px , 0);
+}
+
+.filter select {
+  width: 100%;
+  border: 1px solid rgb(180, 180, 180);
+  outline: 0;
+  border-radius: 3px;
+  height: 40px;
+  padding-inline: 10px;
+  appearance: none;
+  position: relative;
+  color: gray;
+  background-image: url("photo/Caret-Down-Fill.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 95% 50%;
+ 
+}
+
+span {
+  background-color: rgb(56, 73, 133);
+  color: white;
+  font-size: medium;
+  height: 40px;
+  border-radius: 3px;
+  text-align: center;
+
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items:center;
+}
+
+span:hover{
+  background-color: rgb(182, 3, 3);
+  cursor: pointer;
+}
+
+
+#first-line  {
+  width: 99%;
+  height: 2px;
+  margin:30px auto;
+  background-color: rgb(199, 199, 199);
+}
+
+.line {
+    margin: 0 20px;
+    padding: 0;
+}
+
+.products-box {
+    height: 440px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+    border-radius: 10px;
+    padding:0 20px 5px 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.product-lable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-inline: auto;
+  width: 100%;
+ 
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 100px;
+  padding-inline: 20px;
+
+}
+
+.product-lable p {
+  padding-right: 10px;
+  text-align: center;
+}
+
+
+.product-row {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+ 
+}
+
+.product {
+  width: 100%;
+  margin:0 auto;
+  border-radius: 5px;
+  gap: 30px;
+  padding:10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.product p {
+  width: 70px;
+  text-align: center;
+ 
+  font-size: 14px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  border-radius: 10px;
+
+}
+
+.buy-btn {
+  background-color: rgb(182, 3, 3);
+  border-radius: 10px;
+  width: 80px;
+  border: 0;
+  outline: 0;
+  color: white;
+  padding: 8px;
+}
+
+.buy-btn:hover{
+    background-color: rgb(56, 73, 133);
+    cursor: pointer;
+  }
+
+
+  /* --- page scroll style --- */
+
+
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+html::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(56, 73, 133);
+    border-radius: 5px;
+  }
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(182, 3, 3);
+    border-radius: 5px;
+  }
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(128, 33, 7);
+    border-radius: 5px;
+  }
+
+
+  /* --- product box scroll style --- */
+
+  .products-box::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .products-box::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.products-box::-webkit-scrollbar-thumb {
+    background: rgb(182, 3, 3);
+    border-radius: 5px;
+  }
+
+  .products-box::-webkit-scrollbar-thumb:hover {
+    background: rgb(56, 73, 133);
+    border-radius: 5px;
+  }
+
+  .products-box::-webkit-scrollbar-thumb:active {
+    background: rgb(24, 32, 64);
+    border-radius: 5px;
+  }
