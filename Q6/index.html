@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q6</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -19,21 +20,21 @@
         </header>
         <br>
 
-        <form action="#" class="form">
+        <form name="Form" action="#" class="form">
 
             <div>
                 <label>Firstname :</label>
-                <input id="firstname" type="text" placeholder="Firstname" minlength="3" maxlength="10">
+                <input name="firstname" type="text" placeholder="Firstname" minlength="3" maxlength="10" onkeypress="validateForm1()">
             </div>
 
             <div>
                 <label>Middlename :</label>
-                <input id="middlename" type="text" placeholder="Middlename" minlength="3" maxlength="10">
+                <input name="middlename" type="text" placeholder="Middlename" minlength="3" maxlength="10" onkeypress="validateForm2()">
             </div>
 
             <div>
                 <label>Lastname :</label>
-                <input type="text" id="lastname" placeholder="Lastname" minlength="3" maxlength="10">
+                <input type="text" id="lastname" placeholder="Lastname" minlength="3" maxlength="10" onkeypress="validateForm3()">
             </div>
 
             <div class="course-box">
@@ -68,11 +69,11 @@
 
             <div>
                 <label>Phone :</label>
-                <input type="text" value="+91" minlength="2" maxlength="5" pattern="(?=.*[0-9])(?=.*[+])>
+                <input type="text" value="+91" minlength="2" maxlength="5">
             </div>
 
             <div>
-                <input type=" number" placeholder="Phone no." minlength="10" maxlength="10">
+                <input type="number" placeholder="Phone no." minlength="10" maxlength="10">
             </div>
 
             <div>
@@ -82,18 +83,18 @@
 
             <div>
                 <label><b>Email :</b></label>
-                <input type="email" placeholder="Enter Email">
+                <input id="email" type="email" placeholder="Enter Email" onkeypress="validateForm4()">
             </div>
 
             <div>
                 <label><b>Password :</b></label>
-                <input type="password" placeholder="Password"
-                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+                <input name="pass" type="password" placeholder="Password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" onkeypress="validateForm5()">
             </div>
 
             <div>
                 <label><b>Re-type Password :</b></label>
-                <input type="password" id="password" placeholder="Retype Password">
+                <input name="pass2" type="password" id="password" placeholder="Retype Password" onkeypress="validateForm6()">
             </div>
 
 
@@ -102,6 +103,8 @@
         </form>
 
     </div>
+
+    
 
 </body>
 
