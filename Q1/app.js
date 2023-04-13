@@ -10,7 +10,7 @@ const topSalary = (salary) => {
 
     let topSalary = 0;
 
-    for (const [name, salaryAmount] of Object.entries(salary)) {
+    for (const [,salaryAmount] of Object.entries(salary)) {
         topSalary = (salaryAmount >= topSalary) ? salaryAmount : topSalary;
     }
 
