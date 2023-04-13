@@ -1,15 +1,4 @@
 
-
-// const firstName = document. forms["Form"]["firstname"].value;
-// const middlename = document.forms["Form"]["middlename"].value;
-// const lastname = document.forms["Form"]["lastname"].value;
-// const email = document.forms["Form"]["email"].value;
-// const pass = document.forms["Form"]["pass"].value;
-// const pass2 = document.forms["Form"]["pass2"].value;
-
-
-
-
 function validateForm1() {
     const firstName = document.forms["Form"]["firstname"].value;
     if (firstName == "") {
@@ -64,6 +53,15 @@ validateForm3()
 validateForm4()
 validateForm5()
 validateForm6()
+
+
+
+// const firstName = document. forms["Form"]["firstname"].value;
+// const middlename = document.forms["Form"]["middlename"].value;
+// const lastname = document.forms["Form"]["lastname"].value;
+// const email = document.forms["Form"]["email"].value;
+// const pass = document.forms["Form"]["pass"].value;
+// const pass2 = document.forms["Form"]["pass2"].value;
 
 
 // if (firstName == "") {
